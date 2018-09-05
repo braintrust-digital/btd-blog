@@ -1,9 +1,9 @@
 lock "~> 3.11.0"
 
-set :application, 'HexCom'
-set :repo_url, "git@github.com:HexArmor/HexCom.git"
+set :application, 'btd-blog'
+set :repo_url, 'git@github.com:braintrust-digital/btd-blog.git'
 set :deploy_via, :remote_cache
-set :deploy_to, '/home/deploy/hexcom'
+set :deploy_to, '/home/deploy/btd-blog'
 
 set :keep_releases, 2
 set :keep_assets, 2
