@@ -21,7 +21,6 @@ group :development, :test do
 end
 
 group :development do
-  gem 'capistrano-db-tasks', require: false
   gem 'capistrano-rails'
   gem 'capistrano-rbenv'
   gem 'listen', '>= 3.0.5', '< 3.2'
