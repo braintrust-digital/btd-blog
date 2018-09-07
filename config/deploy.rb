@@ -1,4 +1,5 @@
 lock "~> 3.11.0"
+require 'capistrano-db-tasks'
 
 set :application, 'btd-blog'
 set :repo_url, 'git@github.com:braintrust-digital/btd-blog.git'
@@ -7,6 +8,9 @@ set :deploy_to, '/home/deploy/btd-blog'
 
 set :keep_releases, 2
 set :keep_assets, 2
+
+set :db_local_clean, true
+set :db_remote_clean, true
 
 append :linked_files, "config/database.yml", "config/master.key"
 append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "public/system"
