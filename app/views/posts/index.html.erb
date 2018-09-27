@@ -1,8 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Posts</h1>
-<h2>Rails Env: <%= Rails.env %></h2>
-
+<h2>Rails Env: <%= "#{Rails.env} - #{ActiveRecord::Base.connection.adapter_name}" %></h2>
 <ul>
   <% @posts.each do |post| %>
     <li><%= link_to post.title, post %></li>
