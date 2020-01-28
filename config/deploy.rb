@@ -12,8 +12,8 @@ set :keep_assets, 2
 set :db_local_clean, true
 set :db_remote_clean, true
 
-append :linked_files, "config/database.yml", "config/master.key"
-append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "public/system"
+set :linked_files, %w{config/database.yml config/master.key}
+set :linked_dirs, %w{log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
 
 namespace :deploy do
   desc 'Restart application'

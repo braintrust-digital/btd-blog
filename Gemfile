@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.5.1'
+ruby '2.6.2'
 
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'coffee-rails', '~> 4.2'
@@ -19,8 +19,9 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 
+# gem 'capistrano-db-tasks', require: false
 group :development do
-  gem 'capistrano-db-tasks', require: false
+  gem 'capistrano-db-tasks', '0.4', require: false
   gem 'capistrano-rails'
   gem 'capistrano-rbenv'
   gem 'listen', '>= 3.0.5', '< 3.2'
