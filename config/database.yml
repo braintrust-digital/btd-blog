@@ -1,15 +1,15 @@
-default: &default
-  adapter: mysql2
-  encoding: utf8
-  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  username: root
-  host: localhost
-  reconnect: false
-
 # default: &default
-#   adapter: postgresql
-#   encoding: unicode
+#   adapter: mysql2
+#   encoding: utf8
 #   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+#   username: root
+#   host: localhost
+#   reconnect: false
+
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
 development:
   <<: *default

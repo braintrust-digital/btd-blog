@@ -15,8 +15,8 @@ gem 'mysql2', '~> 0.5.1'
 gem 'faker'
 gem 'ed25519'
 gem 'bcrypt_pbkdf'
-# gem 'pg'
-# gem 'yaml_db'
+gem 'pg'
+gem 'yaml_db'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
